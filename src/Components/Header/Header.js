@@ -61,7 +61,7 @@ function Header() {
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
-            <span onClick={()=>navigate('/create')}>SELL</span>
+            {user && <span onClick={() => navigate("/create")}>SELL</span>}
           </div>
         </div>
       </div>
